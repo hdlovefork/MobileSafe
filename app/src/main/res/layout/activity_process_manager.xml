@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/ll_appmanager_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextViewTitleTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="进程管理"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_process_manager_process_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/tv_process_manager_process_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="总进程：10个"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_process_manager_memory_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="占用内存/总内存："
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <ListView
+            android:id="@+id/lv_process_manager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fastScrollEnabled="true">
+        </ListView>
+
+        <LinearLayout
+            android:id="@+id/ll_process_manager_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="玩命加载中..."/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_process_manager_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#f888"
+            android:clickable="true"
+            android:padding="5dp"
+            android:text="用户进程6个"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_select_all"
+            android:background="@drawable/btn_default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="全选"/>
+
+        <Button
+            android:id="@+id/bt_select_inverse"
+            android:background="@drawable/btn_default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="反选"/>
+
+        <Button
+            android:id="@+id/bt_process_clear"
+            android:background="@drawable/btn_default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="清理"/>
+
+        <Button
+            android:id="@+id/bt_open_setting"
+            android:background="@drawable/btn_default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="设置"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_address_query"
+        style="@style/TextViewTitleTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:text="号码归属地查询"/>
+
+    <TextView
+        android:id="@+id/tv_sms_backup"
+        style="@style/TextViewTitleTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:text="短信备份"/>
+
+    <TextView
+        android:id="@+id/tv_sms_restore"
+        style="@style/TextViewTitleTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:text="短信还原"/>
+    <TextView
+        android:id="@+id/tv_app_lock"
+        style="@style/TextViewTitleTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:text="程序锁"/>
+
+</LinearLayout>

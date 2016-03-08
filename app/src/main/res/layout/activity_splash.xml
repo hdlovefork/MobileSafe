@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/launcher_bg"
+    >
+
+    <TextView
+        android:id="@+id/tv_splash_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="版本号："
+        android:textColor="@android:color/black"
+        android:textSize="20sp"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_marginTop="40dp"
+        android:max="100"
+        android:minWidth="200dp"
+        android:minHeight="5dp"
+        android:progressDrawable="@drawable/pb_balck_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/pb_splash_progress"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_splash_version"/>
+
+</RelativeLayout>

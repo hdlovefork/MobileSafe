@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/TextViewTitleTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="缓存清理"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="25dp">
+            <TextView
+                android:paddingLeft="10dp"
+                android:text="缓存大小:256KB"
+                android:id="@+id/tv_cache_size"
+                android:gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+            <RelativeLayout
+                android:id="@+id/rl_panel_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ProgressBar
+                    android:id="@+id/pb_progress"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:progressDrawable="@drawable/pb_orange_gray"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_scan_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:text="正在扫描..."
+                    android:textColor="@android:color/holo_red_dark"/>
+            </RelativeLayout>
+        </FrameLayout>
+
+
+        <ListView
+            android:id="@+id/lv_cache"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_panel_control"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/bt_clear_all"
+            android:background="@drawable/btn_default"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="全部清理"/>
+
+    </LinearLayout>
+</LinearLayout>

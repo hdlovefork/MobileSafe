@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="10dp">
+
+    <EditText
+        android:id="@+id/et_address_query_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入要查询的号码"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/bt_address_query_query"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_default"
+        android:text="查     询"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/tv_address_query_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="归属地："
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="20sp"/>
+</LinearLayout>

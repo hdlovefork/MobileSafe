@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MobileSafe</string>
+    <string name="action_settings">Settings</string>
+    <!--配置文件保存的名称-->
+    <string name="config_file_name">config</string>
+    <!-- 是否允许自动更新-->
+    <string name="config_update">upadte</string>
+    <string name="sample_device_admin">手机卫士</string>
+    <string name="sample_device_admin_description">黑马手机卫士时刻保护您的安全，手机防盗功能需要使用管理员权限。</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <TextView
+        style="@style/TextViewTitleTheme"
+        android:text="系统设置"
+        />
+
+    <com.hdlovefork.mobilesafe.ui.SettingCheckView
+        android:id="@+id/scv_allow_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#20f0"
+        app:title="开启自动更新"/>
+
+    <com.hdlovefork.mobilesafe.ui.SettingCheckView
+        android:id="@+id/scv_allow_intercept_service"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#20f0"
+        app:title="开启拦截服务"/>
+
+    <com.hdlovefork.mobilesafe.ui.SettingCheckView
+        android:id="@+id/scv_address_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#20f0"
+        app:title="来去电归属地提示"/>
+
+    <com.hdlovefork.mobilesafe.ui.SettingCheckView
+        android:id="@+id/scv_app_lock"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#20f0"
+        app:title="开启程序锁功能"/>
+
+    <com.hdlovefork.mobilesafe.ui.SettingChangeDescView
+        android:id="@+id/scv_address_style"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#20f0"
+        app:desc="金属黑"
+        app:title="归属地提示框风格"/>
+
+</LinearLayout>

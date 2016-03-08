@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:clickable="true"
+              android:background="@drawable/settingview_bg"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <TextView
+        style="@style/TextViewTitleTheme"
+        android:text="功能列表"
+        />
+    <com.hdlovefork.mobilesafe.ui.MarqueeTextView
+        android:text="黑马手机卫士，让您的手机远离木马病毒，还您一个健康的环境夺加右路了别类同顶替职有有人了工了疑难杂症同最想"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <GridView
+        android:id="@+id/gv_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:numColumns="3" >
+    </GridView>
+
+</LinearLayout>

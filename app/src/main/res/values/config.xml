@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="serverAddr">http://10.0.2.2/version.json</string>
+    <string name="addr_box_style">addr_box_style</string>
+    <string-array name="addrBoxStyleDescArray">
+        <item>半透明</item>
+        <item>活力橙</item>
+        <item>卫士蓝</item>
+        <item>金属灰</item>
+        <item>苹果绿</item>
+    </string-array>
+</resources>
